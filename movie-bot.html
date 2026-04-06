@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search Bot</title>
+  <link rel="stylesheet" href="light.css">
+</head>
+<body>
+  <section class="project-detail">
+    <div class="top-header">
+      <h1>Movie Search Bot</h1>
+      <p>Telegram movie retrieval bot with configurable deployment, channel search, and paginated media delivery</p>
+    </div>
+
+    <div class="project-info">
+      <h3>Tech Stack</h3>
+      <div class="project-tags">
+        <span>Python</span>
+        <span>Telethon</span>
+        <span>python-telegram-bot</span>
+        <span>aiosqlite</span>
+        <span>Webhook / Polling</span>
+      </div>
+
+      <h3>Description</h3>
+      <p>
+        Movie Search Bot is a production-ready Telegram bot that searches configured channels, returns matching
+        files through paginated results, and supports either polling or webhook-based deployment. It uses persistent
+        Telethon sessions, SQLite user storage, and retry-aware delivery logic for stable long-running operation.
+      </p>
+
+      <h3>Key Highlights</h3>
+      <ul>
+        <li>Built configurable channel search with capped result sets, per-user caching, and paginated file selection.</li>
+        <li>Added rate-limited copy delivery, retry handling, and auto-delete behavior to improve Telegram UX and reliability.</li>
+        <li>Prepared deployment for Linux VMs with systemd, environment-driven config, and optional webhook support.</li>
+        <li>Separated secrets and runtime configuration into environment variables for safer production setup.</li>
+      </ul>
+
+      <span>Finished Project</span>
+    </div>
+  </section>
+</body>
+</html>

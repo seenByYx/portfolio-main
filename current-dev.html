@@ -3,52 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blockchain Storage System</title>
+  <title>Telegram Forwarder Bot</title>
   <link rel="stylesheet" href="light.css">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+  <section class="project-detail">
+    <div class="top-header">
+      <h1>Telegram Forwarder Bot</h1>
+      <p>Admin relay bot for managing user conversations, broadcasts, and support flows from a single Telegram interface</p>
+    </div>
 
-  <!-- Navbar can be same as main page -->
-  <nav>
-    <!-- Include navbar code or minimal nav -->
-  </nav>
-
-  <main>
-    <section class="project-detail">
-      <div class="top-header">
-        <h1>Blockchain Storage System</h1>
-        <p>A secure, decentralized storage system built on blockchain</p>
+    <div class="project-info">
+      <h3>Tech Stack</h3>
+      <div class="project-tags">
+        <span>Python</span>
+        <span>python-telegram-bot</span>
+        <span>Flask</span>
+        <span>JSON Storage</span>
+        <span>Retry Logic</span>
       </div>
 
-      <div class="project-images">
-        <img src="../images/blockchain-storage1.png" alt="Blockchain Storage Screenshot">
-        <img src="../images/blockchain-storage2.png" alt="Blockchain Storage Screenshot">
-      </div>
+      <h3>Description</h3>
+      <p>
+        This Telegram bot forwards all incoming user messages to an admin, preserves message mappings for replies,
+        supports safe broadcast workflows, and adds admin-side controls for tracking users and continuing conversations.
+        It was designed as a lightweight support automation tool with resilient messaging behavior.
+      </p>
 
-      <div class="project-info">
-        <h3>Tech Stack</h3>
-        <div class="project-tags">
-          <span>Python</span>
-          <span>Blockchain</span>
-          <span>IPFS</span>
-          <span>Smart Contracts</span>
-        </div>
+      <h3>Key Highlights</h3>
+      <ul>
+        <li>Built bidirectional admin-to-user relay logic with persistent message-link mapping and active-user tracking.</li>
+        <li>Added broadcast confirmation, admin command panels, paginated user listing, and search-based user lookup.</li>
+        <li>Implemented user anti-spam rate limiting and exponential backoff for transient Telegram API failures.</li>
+        <li>Prepared the bot for long-running Windows deployment with startup and auto-restart scripts.</li>
+      </ul>
 
-        <h3>Status</h3>
-        <p>Currently in development. We are building the backend storage system using blockchain technology to securely store and retrieve files in a decentralized manner.</p>
-
-        <h3>Next Steps</h3>
-        <ul>
-          <li>Implement IPFS-based storage for files.</li>
-          <li>Integrate smart contracts for access control.</li>
-          <li>Create a web interface for uploading/downloading files.</li>
-        </ul>
-
-        <span style="display:inline-block; margin-top: 10px; background: #f4b400; color: #0f172a; padding: 6px 12px; border-radius: 8px;">🚧 In Progress</span>
-      </div>
-    </section>
-  </main>
-
+      <span>Finished Project</span>
+    </div>
+  </section>
 </body>
 </html>
