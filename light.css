@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
-  --bg-base: #0b1020;
-  --bg-deep: #09111f;
-  --bg-panel: rgba(18, 25, 44, 0.78);
-  --bg-panel-strong: rgba(20, 29, 52, 0.94);
-  --bg-glass: rgba(7, 12, 24, 0.72);
+  --bg-base: #121214;
+  --bg-deep: #0a0a0c;
+  --bg-panel: rgba(28, 28, 32, 0.8);
+  --bg-panel-strong: rgba(34, 34, 40, 0.94);
+  --bg-glass: rgba(12, 12, 16, 0.74);
   --border-soft: rgba(148, 163, 184, 0.16);
-  --border-accent: rgba(245, 158, 11, 0.28);
+  --border-accent: rgba(74, 222, 128, 0.28);
   --text-primary: #f8fafc;
-  --text-secondary: #c7d2e3;
-  --text-muted: #8ea1bd;
-  --accent: #f59e0b;
-  --accent-soft: #ffd27a;
-  --accent-2: #49c6b8;
+  --text-secondary: #ddd6e3;
+  --text-muted: #a79baa;
+  --accent: #4ade80;
+  --accent-soft: #bbf7d0;
+  --accent-2: #f472b6;
   --danger: #f87171;
-  --shadow-md: 0 18px 40px rgba(4, 9, 24, 0.32);
-  --shadow-lg: 0 28px 70px rgba(1, 6, 18, 0.45);
+  --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.45);
   --radius-lg: 28px;
   --radius-md: 18px;
 }
@@ -41,9 +41,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top left, rgba(73, 198, 184, 0.16), transparent 28%),
-    radial-gradient(circle at top right, rgba(245, 158, 11, 0.16), transparent 24%),
-    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-base) 48%, #0f172a 100%);
+    radial-gradient(circle at top left, rgba(74, 222, 128, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(244, 114, 182, 0.14), transparent 24%),
+    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-base) 48%, #1a1a1f 100%);
   color: var(--text-primary);
 }
 
@@ -171,8 +171,8 @@ header {
   padding: 10px 16px;
   margin-bottom: 18px;
   border-radius: 999px;
-  border: 1px solid rgba(73, 198, 184, 0.28);
-  background: rgba(73, 198, 184, 0.08);
+  border: 1px solid rgba(74, 222, 128, 0.28);
+  background: rgba(74, 222, 128, 0.08);
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -314,15 +314,15 @@ header {
 
 .about-info:hover,
 .skills-box:hover {
-  border-color: rgba(245, 158, 11, 0.24);
+  border-color: rgba(74, 222, 128, 0.24);
 }
 
 .contact-info:hover {
-  border-color: rgba(73, 198, 184, 0.24);
+  border-color: rgba(244, 114, 182, 0.24);
 }
 
 .contact-form:hover {
-  border-color: rgba(245, 158, 11, 0.24);
+  border-color: rgba(244, 114, 182, 0.24);
 }
 
 .about-info h3,
@@ -353,15 +353,15 @@ header {
   padding: 12px 16px;
   border-radius: 14px;
   background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(73, 198, 184, 0.12);
+  border: 1px solid rgba(244, 114, 182, 0.14);
   color: var(--text-primary);
   line-height: 1.65;
   transition: background 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
 }
 
 .skills-list li:hover {
-  background: rgba(73, 198, 184, 0.09);
-  border-color: rgba(73, 198, 184, 0.28);
+  background: rgba(244, 114, 182, 0.09);
+  border-color: rgba(244, 114, 182, 0.3);
   transform: translateX(5px);
 }
 
@@ -417,9 +417,9 @@ header {
   align-items: flex-start;
   text-align: left;
   background:
-    linear-gradient(180deg, rgba(73,198,184,0.16), rgba(255,255,255,0.03)),
+    linear-gradient(180deg, rgba(244,114,182,0.16), rgba(255,255,255,0.03)),
     var(--bg-panel-strong);
-  border: 1px solid rgba(73, 198, 184, 0.22);
+  border: 1px solid rgba(244, 114, 182, 0.22);
   color: var(--text-primary);
   transform: rotateY(180deg);
 }
@@ -440,7 +440,7 @@ header {
   place-items: center;
   border-radius: 22px;
   margin-bottom: 18px;
-  background: linear-gradient(145deg, rgba(245,158,11,0.12), rgba(73,198,184,0.12));
+  background: linear-gradient(145deg, rgba(46,196,182,0.14), rgba(125,211,252,0.14));
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
 }
 
@@ -491,8 +491,8 @@ header {
   margin-top: auto;
   padding: 10px 15px;
   border-radius: 12px;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.22);
+  background: rgba(74, 222, 128, 0.12);
+  border: 1px solid rgba(74, 222, 128, 0.22);
   color: var(--accent-soft);
   font-weight: 700;
 }
@@ -563,8 +563,8 @@ header {
 
 .contact-form .input-field:focus,
 .contact-form textarea:focus {
-  border-color: rgba(73, 198, 184, 0.36);
-  box-shadow: 0 0 0 4px rgba(73, 198, 184, 0.08);
+  border-color: rgba(74, 222, 128, 0.36);
+  box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.08);
   background: rgba(255,255,255,0.06);
 }
 
@@ -576,16 +576,16 @@ header {
   border: none;
   border-radius: 14px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #071220;
+  color: #0b0b0d;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 16px 30px rgba(245, 158, 11, 0.22);
+  box-shadow: 0 16px 30px rgba(74, 222, 128, 0.22);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .contact-form .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 36px rgba(73, 198, 184, 0.22);
+  box-shadow: 0 20px 36px rgba(244, 114, 182, 0.22);
 }
 
 .form-message {
@@ -711,11 +711,11 @@ footer {
 }
 
 .project-tags span {
-  background: rgba(245,158,11,0.12);
+  background: rgba(46,196,182,0.12);
   color: var(--accent-soft);
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(245,158,11,0.16);
+  border: 1px solid rgba(46,196,182,0.18);
   font-weight: 700;
   font-size: 0.82rem;
   line-height: 1.2;
@@ -724,14 +724,14 @@ footer {
 }
 
 .project-tags span:hover {
-  background: rgba(245,158,11,0.2);
+  background: rgba(46,196,182,0.2);
   transform: translateY(-2px);
 }
 
 .project-info > span {
   display: inline-block;
   font-weight: 800;
-  color: #071220;
+  color: #0b0b0d;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   padding: 8px 14px;
   border-radius: 999px;
@@ -757,14 +757,14 @@ footer {
 }
 
 .project-links a {
-  background: rgba(245,158,11,0.12);
+  background: rgba(46,196,182,0.12);
   color: var(--accent-soft);
-  border: 1px solid rgba(245,158,11,0.24);
+  border: 1px solid rgba(46,196,182,0.24);
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .project-links a:hover {
-  background: rgba(245,158,11,0.2);
+  background: rgba(46,196,182,0.2);
   transform: translateY(-2px);
 }
 
