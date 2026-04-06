@@ -107,52 +107,78 @@
 <section class="section" id="projects">
   <div class="top-header">
     <h1>Projects</h1>
-    <p>A showcase of my featured and ongoing projects</p>
+    <p>Finished backend-focused systems built for automation, media delivery, and workflow reliability</p>
   </div>
 
   <div class="project-container">
-
-    <!-- Project 1 -->
-    <div class="project-box" onclick="goToProject('microo.html')">
-      <div class="card">
-        <div class="card-front">
-          <i class="uil uil-briefcase-alt"></i>
-          <h3>Featured Project</h3>
-          <p>A study notes-sharing platform</p>
+    <article class="project-box">
+      <div class="card project-card">
+        <div class="card-front project-face">
+          <div class="project-icon-wrap">
+            <i class="uil uil-server-network"></i>
+          </div>
+          <h3>MuFilms Search & Request Platform</h3>
+          <p class="project-summary">
+            Asynchronous Telegram search backend that scans multiple channels, paginates up to 100 results per query, and delivers media on demand with request tracking and auto-notifications.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Telethon</span>
+            <span>aiosqlite</span>
+            <span>Async Workflows</span>
+          </div>
         </div>
-        <div class="card-back">
-          <p>Click to see full details</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-box" onclick="goToProject('current-dev.html')">
-      <div class="card">
-        <div class="card-front">
-          <i class="uil uil-code-branch"></i>
-          <h3>Current Development</h3>
-          <p>Building innovative learning tools</p>
-        </div>
-        <div class="card-back">
-          <p>Click to see full details</p>
+        <div class="card-back project-face">
+          <p>Persisted user and request activity in SQLite, added admin broadcast flows, and hardened delivery with retry handling, semaphore-based throttling, and temporary message cleanup for better usability.</p>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!-- Project 3 -->
-    <div class="project-box" onclick="goToProject('experience.html')">
-      <div class="card">
-        <div class="card-front">
-          <i class="uil uil-award"></i>
-          <h3>Experience</h3>
-          <p>Hands-on IoT & Frontend projects</p>
+    <article class="project-box">
+      <div class="card project-card">
+        <div class="card-front project-face">
+          <div class="project-icon-wrap">
+            <i class="uil uil-layers-alt"></i>
+          </div>
+          <h3>Series Discovery & Delivery Engine</h3>
+          <p class="project-summary">
+            Structured media retrieval system that parses raw filenames into season, language, and quality trees so users can browse episode archives without manual searching.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Regex Parsing</span>
+            <span>OMDb API</span>
+            <span>Telegram Bot</span>
+          </div>
         </div>
-        <div class="card-back">
-          <p>Click to see full details</p>
+        <div class="card-back project-face">
+          <p>Indexed large channel histories, enriched results with external metadata, and automated ordered episode delivery with pacing controls to reduce failures during batch sends.</p>
         </div>
       </div>
-    </div>
+    </article>
+
+    <article class="project-box">
+      <div class="card project-card">
+        <div class="card-front project-face">
+          <div class="project-icon-wrap">
+            <i class="uil uil-database"></i>
+          </div>
+          <h3>Backup & Drive Relay Pipeline</h3>
+          <p class="project-summary">
+            Fault-tolerant Telegram backup pipeline with live sync, resumable checkpoints, and Google Drive relay support for large media transfer workflows.
+          </p>
+          <div class="project-tags">
+            <span>SQLite WAL</span>
+            <span>Progress Tracking</span>
+            <span>Streaming</span>
+            <span>Automation</span>
+          </div>
+        </div>
+        <div class="card-back project-face">
+          <p>Tracked 272,917 processed message IDs and 50,830 existing filenames, recovered from flood waits and expired file references, and streamed public Drive files directly into Telegram sessions.</p>
+        </div>
+      </div>
+    </article>
 
   </div>
 </section>

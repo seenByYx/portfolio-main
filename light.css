@@ -294,20 +294,20 @@ header {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 /* Individual project box */
 .project-box {
   flex: 1 1 30%;
-  min-width: 250px;
+  min-width: 280px;
   perspective: 1000px;
-  cursor: pointer;
 }
 
 .card {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 330px;
   text-align: center;
   border-radius: 20px;
   transform-style: preserve-3d;
@@ -330,30 +330,42 @@ header {
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
-  padding: 20px;
+  padding: 24px;
   transition: background 0.3s ease;
 }
 
 .card-front {
-  background: rgba(244,180,0,0.1);
+  background: linear-gradient(180deg, rgba(244,180,0,0.12), rgba(255,255,255,0.04));
   color: #f4b400;
+  border: 1px solid rgba(244, 180, 0, 0.18);
 }
 
 .card-back {
-  background: rgba(244,180,0,0.15);
+  background: linear-gradient(180deg, rgba(52,211,153,0.15), rgba(255,255,255,0.04));
   color: #ffffff;
   transform: rotateY(180deg);
+  border: 1px solid rgba(52, 211, 153, 0.18);
 }
 
 /* Icons */
 .card-front i {
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 42px;
   transition: color 0.3s ease;
 }
 
 .project-box:hover .card-front i {
   color: #34d399;
+}
+
+.project-icon-wrap {
+  width: 78px;
+  height: 78px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  margin-bottom: 18px;
+  background: rgba(15, 23, 42, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
 }
 
 /* Text */
@@ -365,6 +377,21 @@ header {
 .card-front p, .card-back p {
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.project-summary {
+  color: #e2e8f0;
+  margin-bottom: 18px;
+}
+
+.project-face {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.project-face h3 {
+  min-height: 60px;
 }
 
 /* Links / Status */
@@ -396,11 +423,19 @@ header {
   .project-box {
     flex: 1 1 100%;
   }
+
+  .card {
+    height: 300px;
+  }
 }
 
 @media (max-width: 500px) {
   .card-front i {
     font-size: 40px;
+  }
+
+  .card {
+    height: 340px;
   }
 }
 
