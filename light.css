@@ -307,7 +307,7 @@ header {
 .card {
   position: relative;
   width: 100%;
-  height: 330px;
+  height: 400px;
   text-align: center;
   border-radius: 20px;
   transform-style: preserve-3d;
@@ -332,6 +332,7 @@ header {
   backface-visibility: hidden;
   padding: 24px;
   transition: background 0.3s ease;
+  overflow: hidden;
 }
 
 .card-front {
@@ -384,6 +385,20 @@ header {
   margin-bottom: 18px;
 }
 
+.card-front .project-summary {
+  flex: 1;
+}
+
+.project-tech {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+  color: #f4b400;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .project-face {
   justify-content: flex-start;
   align-items: flex-start;
@@ -425,7 +440,7 @@ header {
   }
 
   .card {
-    height: 300px;
+    height: 380px;
   }
 }
 
@@ -435,7 +450,7 @@ header {
   }
 
   .card {
-    height: 340px;
+    height: 420px;
   }
 }
 
@@ -815,9 +830,11 @@ footer {
 .project-tags span {
   background: rgba(244,180,0,0.1);
   color: #f4b400;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 8px;
   font-weight: 500;
+  font-size: 0.82rem;
+  line-height: 1.2;
   transition: background 0.3s ease, transform 0.2s ease;
   cursor: default;
 }
