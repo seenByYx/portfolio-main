@@ -142,7 +142,7 @@ if (matrixCanvas) {
     matrixCtx.fillStyle = "rgba(6, 16, 11, 0.08)";
     matrixCtx.fillRect(0, 0, width, height);
 
-    matrixCtx.fillStyle = "rgba(111, 232, 191, 0.7)";
+    matrixCtx.fillStyle = "rgba(111, 232, 191, 0.55)";
     matrixCtx.font = `${matrixFontSize}px Consolas, monospace`;
 
     matrixColumns.forEach((columnY, index) => {
@@ -187,3 +187,18 @@ if(footerYear){
 function goToProject(url) {
   window.location.href = url;
 }
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("music-toggle");
+
+let isPlaying = false;
+
+btn.addEventListener("click", () => {
+  if (!isPlaying) {
+    music.play();
+    btn.textContent = "🔊";
+  } else {
+    music.pause();
+    btn.textContent = "🔇";
+  }
+  isPlaying = !isPlaying;
+});

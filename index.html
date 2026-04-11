@@ -28,7 +28,6 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-
     <div class="nav-menu-btn">
       <i class="uil uil-bars"></i>
     </div>
@@ -51,10 +50,13 @@
     </div>
 
     <!-- Image Content -->
-    <div class="hero-image">
-      <canvas class="matrix-canvas" aria-hidden="true"></canvas>
-      <img src="assets/images/image.png" alt="Avatar">
-    </div>
+<div class="hero-image">
+  <div class="matrix-overlay">
+    <canvas class="matrix-canvas" aria-hidden="true"></canvas>
+  </div>
+
+  <img src="assets/images/image.png" alt="Avatar">
+</div>
 
     <div class="hero-bottom">
       <div class="hero-actions">
@@ -322,6 +324,7 @@
 
 
   </div>
+  
 </section>
 
 <footer>
@@ -353,7 +356,13 @@
     </div>
   </div>
 </footer>
+  <audio id="bg-music" loop>
+  <source src="assets/audio/one_piece.mp3" type="audio/mpeg">
+</audio>
 
+<button id="music-toggle" class="music-btn" aria-label="Toggle music">
+  <span class="icon">🔊</span>
+</button>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

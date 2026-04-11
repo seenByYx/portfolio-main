@@ -435,14 +435,32 @@ header.scrolled {
   width: 250px;
   height: 250px;
   opacity: 0.14;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
   pointer-events: none;
   z-index: 0;
 }
+.matrix-overlay {
+  position: absolute;
+  top: -20px;
+  right: -20px;
 
+  width: 320px;
+  height: 300px;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  /* fade edges */
+  mask-image: linear-gradient(
+    to left,
+    rgba(0,0,0,1),
+    rgba(0,0,0,0)
+  );
+}
 .hero-image img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(370px, 100%);
   aspect-ratio: 1;
   object-fit: cover;
@@ -1187,12 +1205,30 @@ footer::before {
     line-height: 1;
   }
 
-  .matrix-canvas {
-    width: 210px;
-    height: 210px;
-    top: -8px;
-    right: -10px;
-  }
+.matrix-canvas {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+  width: 300px;
+  height: 280px;
+
+  opacity: 0.14;
+  z-index: 1;
+
+  /* angled panel */
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+
+  /* smooth blending */
+  background: linear-gradient(
+    to left,
+    rgba(0, 255, 200, 0.08),
+    transparent 60%
+  );
+
+  filter: blur(0.3px);
+}
+
 
   .hero-role {
     font-size: 1.05rem;
@@ -1265,4 +1301,43 @@ footer::before {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+.music-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid rgba(111, 232, 191, 0.2);
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+
+  color: #00ffcc;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  z-index: 999;
+
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px rgba(111, 232, 191, 0.25);
+  background: rgba(111, 232, 191, 0.08);
+}
+
+.music-btn.playing {
+  box-shadow: 0 0 22px rgba(0, 255, 200, 0.35);
 }
