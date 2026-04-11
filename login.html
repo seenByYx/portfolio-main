@@ -39,77 +39,41 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login</title>
 <style>
-    * {
-        box-sizing:border-box;
-    }
     body {
-        margin:0;
-        background:
-            radial-gradient(circle at 20% 10%, rgba(111,232,191,0.11), transparent 30rem),
-            radial-gradient(circle at 80% 20%, rgba(46,95,79,0.22), transparent 32rem),
-            linear-gradient(180deg,#000 0%,#06100b 55%,#000 100%);
-        color:#f5fffc;
-        font-family:Inter,Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+        background:#f5f7fa;
+        font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
         display:flex;
         justify-content:center;
         align-items:center;
-        min-height:100vh;
-        overflow:hidden;
-    }
-    body::before {
-        content:"";
-        position:fixed;
-        inset:0;
-        background-image:
-            linear-gradient(rgba(111,232,191,0.028) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(111,232,191,0.028) 1px, transparent 1px);
-        background-size:64px 64px;
-        pointer-events:none;
+        height:100vh;
     }
     .login-box {
-        position:relative;
-        z-index:1;
-        background:rgba(7,18,18,0.72);
-        border:1px solid rgba(0,255,200,0.2);
-        color:#f5fffc;
-        padding:34px;
+        background:white;
+        padding:30px;
         border-radius:8px;
-        box-shadow:0 24px 64px rgba(0,0,0,0.52),0 0 24px rgba(111,232,191,0.1);
-        backdrop-filter:blur(18px);
-        width:min(360px,calc(100% - 36px));
+        box-shadow:0 4px 15px rgba(0,0,0,0.1);
+        width:320px;
     }
-    h2 { text-align:center; margin-bottom:20px; color:#6fe8bf; }
+    h2 { text-align:center; margin-bottom:20px; }
     input[type=text], input[type=password] {
         width:100%;
-        padding:13px 14px;
+        padding:10px;
         margin:10px 0;
-        border:1px solid rgba(182,255,239,0.16);
-        border-radius:8px;
-        background:rgba(0,0,0,0.34);
-        color:#f5fffc;
-        outline:none;
-        transition:border-color .34s ease,box-shadow .34s ease,background .34s ease;
-    }
-    input[type=text]:focus, input[type=password]:focus {
-        border-color:rgba(0,255,200,0.24);
-        background:rgba(111,232,191,0.035);
-        box-shadow:0 0 0 4px rgba(111,232,191,0.06);
+        border:1px solid #ccc;
+        border-radius:5px;
     }
     button {
         width:100%;
-        padding:13px;
-        margin-top:10px;
-        background:linear-gradient(135deg,rgba(111,232,191,0.92),rgba(59,168,117,0.82));
-        color:#06100b;
-        border:1px solid rgba(0,255,200,0.2);
-        border-radius:8px;
+        padding:10px;
+        background:#6a11cb;
+        color:white;
+        border:none;
+        border-radius:5px;
         cursor:pointer;
-        font-weight:800;
-        transition:transform .34s ease,box-shadow .34s ease;
     }
-    button:hover { transform:translateY(-2px); box-shadow:0 18px 40px rgba(111,232,191,0.16); }
+    button:hover { background:#5a0db3; }
     .error {
-        color:#ff6b8b;
+        color:red;
         margin-bottom:10px;
         font-size:0.9rem;
     }

@@ -7,7 +7,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link id="theme-style" rel="stylesheet" href="assets/css/light.css">
+    <link id="theme-style" rel="stylesheet" href="light.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </head>
@@ -30,7 +30,7 @@
     </nav>
 
     <div class="nav-menu-btn">
-      <i class="uil uil-bars"></i>
+      <i class="uil uil-bars" onclick="myMenuFunction()"></i>
     </div>
   </div>
 </header>
@@ -42,60 +42,31 @@
     <div class="hero-text">
       <h2>Hello, I'm</h2>
       <h1 class="hero-name">MUHAMMED YASEEN</h1>
-      <p class="hero-role">Cybersecurity Enthusiast | Telegram Bot Developer | Web3 Explorer</p>
-
-      <div class="typed-wrapper" aria-label="Terminal skills output">
-        <p class="terminal-line">yxseen@system:~$ show skills</p>
-        <p class="terminal-line terminal-output">&gt; <span class="typedText"></span></p>
-      </div>
-    </div>
-
-    <!-- Image Content -->
-    <div class="hero-image">
-      <canvas class="matrix-canvas" aria-hidden="true"></canvas>
-      <img src="assets/images/image.png" alt="Avatar">
-    </div>
-
-    <div class="hero-bottom">
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-      </div>
+      <p class="hero-role">Frontend Developer | Passionate about crafting beautiful & user-friendly websites</p>
+      
+      <!-- Animated typing text -->
+      <p class="typed-wrapper">I specialize in <span class="typedText"></span></p>
 
       <!-- Social Icons -->
-      <div class="social-icons hero-socials">
+      <div class="social-icons">
         <a href="https://www.instagram.com/_yxseen.__/" target="_blank"><i class="uil uil-instagram"></i></a>
         <a href="https://www.linkedin.com/in/muhammed-yaseen-9a94ba299/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
         <a href="tg://openmessage?user_id=1971125096" target="_blank"><i class="uil uil-telegram"></i></a>
         <a href="https://github.com/seenByYx/" target="_blank"><i class="uil uil-github-alt"></i></a>
       </div>
     </div>
+
+    <!-- Image Content -->
+    <div class="hero-image">
+      <img src="photo_2_2023-12-17_11-37-30.jpg" alt="Yaseen Avatar">
+    </div>
   </div>
 </section>
 
-<!-- ===== TOOLS / TECH STACK SECTION ===== -->
-<section class="tools-section reveal">
-  <div class="tools-grid" aria-label="Tools and technologies">
-    <div class="tool-chip" aria-label="VS Code"><iconify-icon icon="devicon:vscode"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Git"><iconify-icon icon="devicon:git"></iconify-icon></div>
-    <div class="tool-chip" aria-label="GitHub"><iconify-icon icon="devicon:github"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Python"><iconify-icon icon="devicon:python"></iconify-icon></div>
-    <div class="tool-chip" aria-label="JavaScript"><iconify-icon icon="devicon:javascript"></iconify-icon></div>
-    <div class="tool-chip" aria-label="HTML"><iconify-icon icon="devicon:html5"></iconify-icon></div>
-    <div class="tool-chip" aria-label="MongoDB"><iconify-icon icon="devicon:mongodb"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Kali Linux"><iconify-icon icon="simple-icons:kalilinux"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Nmap"><iconify-icon icon="simple-icons:nmap"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Wifite"><iconify-icon icon="mdi:wifi-lock"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Bash"><iconify-icon icon="devicon:bash"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Curl"><iconify-icon icon="simple-icons:curl"></iconify-icon></div>
-    <div class="tool-chip" aria-label="Web3"><iconify-icon icon="simple-icons:ethereum"></iconify-icon></div>
-  </div>
-</section>
-
-
+    
             <!-- ABT BOX -->
            <!-- ===== ABOUT SECTION ===== -->
-<section class="section reveal" id="about">
+<section class="section" id="about">
   <div class="top-header">
     <h1>About Me</h1>
     <p>A quick glance at my journey and skills</p>
@@ -105,22 +76,16 @@
     <!-- Left Side - About Info -->
     <div class="about-info">
       <h3>My Journey</h3>
-      <div class="identity-pills" aria-label="Developer focus areas">
-        <span>Cybersecurity</span>
-        <span>Telegram Automation</span>
-        <span>Web3 Systems</span>
-      </div>
       <p>
-        I'm currently pursuing a BSc in Computer Science, driven by a deep curiosity
+        I'm currently pursuing a BSc in Computer Science, driven by a deep curiosity 
         for coding and cybersecurity. I'm continuously expanding my technical expertise.
       </p>
       <p>
-        Beyond coding, I’m passionate about <strong>cybersecurity</strong>,
-        ethical hacking, and system security. Whether it's securing networks,
-        developing web apps, or designing intuitive UIs, I’m always eager to
+        Beyond coding, I’m passionate about <strong>cybersecurity</strong>, 
+        ethical hacking, and system security. Whether it's securing networks, 
+        developing web apps, or designing intuitive UIs, I’m always eager to 
         dive into new challenges. Let's <b>collaborate</b> and create something impactful! 💻🚀
       </p>
-      <a href="assets/docs/YASEEN%20CV%20Resumev2.pdf" class="btn btn-primary about-cv-btn" download>Download CV</a>
     </div>
 
     <!-- Right Side - Skills -->
@@ -136,17 +101,17 @@
   </div>
 </section>
 
-
+            
 
            <!-- projcts -->
-<section class="section reveal" id="projects">
+<section class="section" id="projects">
   <div class="top-header">
     <h1>Projects</h1>
     <p>A growing showcase of the products, bots, and systems I have built across web, automation, and backend workflows</p>
   </div>
 
   <div class="project-container">
-    <article class="project-box" onclick="goToProject('projects/microo.html')">
+    <article class="project-box" onclick="goToProject('microo.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -165,7 +130,7 @@
       </div>
     </article>
 
-    <article class="project-box" onclick="goToProject('projects/mufilms.html')">
+    <article class="project-box" onclick="goToProject('mufilms.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -184,7 +149,7 @@
       </div>
     </article>
 
-    <article class="project-box" onclick="goToProject('projects/current-dev.html')">
+    <article class="project-box" onclick="goToProject('current-dev.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -203,7 +168,7 @@
       </div>
     </article>
 
-    <article class="project-box" onclick="goToProject('projects/movie-bot.html')">
+    <article class="project-box" onclick="goToProject('movie-bot.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -222,7 +187,7 @@
       </div>
     </article>
 
-    <article class="project-box" onclick="goToProject('projects/experience.html')">
+    <article class="project-box" onclick="goToProject('experience.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -241,7 +206,7 @@
       </div>
     </article>
 
-    <article class="project-box" onclick="goToProject('projects/telegram-vercel-bot.html')">
+    <article class="project-box" onclick="goToProject('telegram-vercel-bot.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -260,7 +225,7 @@
       </div>
     </article>
 
-    <article class="project-box" onclick="goToProject('projects/portfolio-site.html')">
+    <article class="project-box" onclick="goToProject('portfolio-site.html')">
       <div class="card project-card">
         <div class="card-front project-face">
           <div class="project-icon-wrap">
@@ -283,10 +248,10 @@
 </section>
 
 
-
+        
 
             <!--Contct-->
-<section class="section reveal" id="contact">
+<section class="section" id="contact">
   <div class="top-header">
     <h1>Get in Touch</h1>
     <p>Have a project in mind? Drop me a message, and let's collaborate!</p>
@@ -315,14 +280,17 @@
           <input type="email" name="email" placeholder="Your Email" class="input-field" required>
         </div>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn btn-primary">Send <i class="uil uil-message"></i></button>
+        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
       </form>
       <p id="form-status" class="form-message"></p>
     </div>
 
-
-  </div>
+ 
 </section>
+        </main>
+
+<script src="script.js"></script>
+</body>
 
 <footer>
   <div class="footer-container">
@@ -354,6 +322,4 @@
   </div>
 </footer>
 
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+
